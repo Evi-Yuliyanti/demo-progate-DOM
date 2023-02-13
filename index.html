@@ -76,18 +76,32 @@
         </div>
 
         <div class="contoh">
-          <div class="gambar">
-            <img src="one (1).jpg" alt="" />
-            <p>image 1</p>
+          <div class="gambar slider-item fade">
+            <img src="11.jpg" alt=""/><br>
+            <button onclick="satu()">Description</button>
           </div>
-          <div class="gambar">
-            <img src="two.jpg" alt="" />
-            <p>image 2</p>
+          <div class="gambar slider-item fade">
+            <img src="12.jpg" alt="" /><br>
+            <button onclick="dua()">Description</button>
           </div>
-          <div class="gambar">
-            <img src="three.jpg" alt="" />
-            <p>image 3</p>
+          <div class="gambar slider-item fade">
+            <img src="13.jpg" alt=""/><br>
+            <button onclick="tiga()">Description</button>
           </div>
+           <div class="gambar slider-item fade">
+            <img src="14.jpg" alt=""/><br>
+            <button onclick="empat()">Description</button>
+          </div>
+           <div class="gambar slider-item fade">
+            <img src="15.png" alt=""/><br>
+            <button onclick="lima()">Description</button>
+          </div>
+           <div class="gambar slider-item fade">
+            <img src="16.jpg" alt=""/><br>
+            <button onclick="enam()">Description</button>
+          </div>
+          <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+      <a class="next" onclick="updateSlide(1)">&#10095;</a>
         </div>
       </div>
     </div>
@@ -101,18 +115,48 @@
           <h2>Contact Me</h2>
         </div>
         <div class="email">
-          <input type="email" placeholder="Email (Diperlukan)" />
+          <input type="email" placeholder="Email (Diperlukan)" required />
         </div>
         <div class="message">
           <textarea placeholder="Message (Diperlukan)"></textarea>
         </div>
 
         <div class="btn">
-          <button>Kirim</button>
+          <button type="submit" value="submit">Kirim</button>
         </div>
       </div>
     </div>
     <!-- akhir contact -->
+
+    <!-- FAQ -->
+    <div class="faq">
+      <h2>FAQ</h2>
+
+      <button class="accordion">what your name?</button>
+      <div class="panel">
+        <p>My name Evi Yuliyanti</p>
+        <p>and you can call me Evi</p>
+      </div>
+
+      <button class="accordion">where do you live?</button>
+      <div class="panel">
+        <p>I live in universe</p>
+        <p>sometimes i live in the forest</p>
+      </div>
+
+      <button class="accordion">what are you hobbies?</button>
+      <div class="panel">
+        <p>Basket ball</p>
+        <p>Dancing</p>
+        <p>singing</p>
+      </div>
+    </div>
+
+
+    <!-- akhir FAQ -->
+
+
+
 
     <!-- footer -->
     <footer>
@@ -126,5 +170,8 @@
       </div>
     </footer>
     <!-- akhir footer -->
+    <script src="script.js"></script>
+
+
   </body>
 </html>

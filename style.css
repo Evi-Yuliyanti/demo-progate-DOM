@@ -76,7 +76,7 @@ section p {
 }
 
 /* proyek */
-.proyek {
+/*.proyek {
   margin-top: 80px;
 }
 .proyek .contoh {
@@ -85,21 +85,85 @@ section p {
   justify-content: space-around;
   justify-items: center;
   margin-top: 35px;
-}
+}*/
 .proyek h2 {
   text-align: center;
   font-size: 30px;
   font-family: "Noto Serif Ahom", serif;
 }
-.proyek img {
-  width: 200px;
-  border-radius: 8px;
+.contoh {
+  text-align: center;
+
 }
-.proyek img:hover {
+.slider-item {
+  display: none; /* Tersembunyi secara default */
+}
+
+.gambar img {
+  width: 50%;
+  object-fit: contain;
+}
+.contoh button {
+  margin-top: 20px;
+  width: 15%;
+  background-color: #00425A;
+  color: white;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 1200px;
+/*  left: 20%;*/
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev{
+  left: 200px;
+}
+.next {
+  right: 200px;
+}
+
+/* Animasi */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+/*.proyek img:hover {
   box-shadow: 5px 5px rgba(0, 0, 0, 0.6);
-}
+}*/
 .proyek p {
   text-align: center;
+  font-size: 19px;
 }
 
 /*contact  */
@@ -148,6 +212,31 @@ button:hover {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.7);
   transition: 0.4s;
 }
+
+/*Part accordion*/
+
+.faq {
+  text-align: center;
+}
+.accordion {
+    background-color: #F6F7C1;
+    color: #444;
+    cursor: pointer;
+    padding: 20px;
+    padding-top: 5px;
+    width: 50%;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    text-align: left;
+    font-size: 15px;
+  }
+  .accordion:hover{
+    background-color: #BEF0CB;
+  }
+  .panel {
+    display: none;
+    padding: 0 10px;
+  }
 
 /* footer */
 footer {
